@@ -15,3 +15,18 @@ services:
       - WORDPRESS_DB_PASSWORD=password
     ports:
       - 10180:80
+
+  app-dolibarr:
+    build: ./amap-dolibarr
+    ports:
+      - 10280:80
+
+  app-garradin:
+    build: ./amap-garradin
+    ports:
+      - 10380:80
+
+  app-galette:
+    build: ./amap-galette
+    ports:
+      - 10480:80
