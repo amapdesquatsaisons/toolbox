@@ -1,6 +1,7 @@
 version: "2"
 
 services:
+  restart: always
   db-mysql:
     image: mysql
     environment :
